@@ -71,7 +71,7 @@ pip install -r requirements.txt
 
 ### 2. Configuration
 
-Créer/modifier le fichier `SQLite_Merger.cfg` (format JSON). Voir [config_help.md](config_help.md) pour la documentation complète.
+Créer/modifier le fichier `SQLite_Merger.cfg` (format JSON). Voir [fichier de configuration](https://github.com/Pytre/SQLiteMerger/wiki/Fichier-de-configuration) pour la documentation complète.
 
 ### 3. Fichiers requis
 
@@ -197,11 +197,7 @@ Spécifier `csv_encoding` sur la table ou ajuster `input_codec`/`output_codec` d
 
 ## Documentation
 
-- [config_help.md](config_help.md) - Guide complet de configuration
-
-## Auteur
-
-Matthieu Ferrier - [GitHub](https://github.com/Pytre/SQLiteMerger)
+- [Wiki](https://github.com/Pytre/SQLiteMerger/wiki)
 
 ## Licence
 
