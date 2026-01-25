@@ -1,0 +1,14 @@
+__pycache__/
+
+# Ignorer tout à la racine
+/*
+
+# Sauf ces fichiers/dossiers
+!.gitignore
+!.gitattributes
+!README.md
+!config_help.md
+!requirements.txt
+!/SQLite_Merger/
+!*.toml
+

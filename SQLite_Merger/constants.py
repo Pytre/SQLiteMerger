@@ -1,0 +1,4 @@
+LOGGER_NAME = "SQLite_Merger"
+DEFAULT_CODEC = "cp1252"
+INPUT_CODEC = "utf-8-sig"
+OUTPUT_CODEC = "cp1252"
