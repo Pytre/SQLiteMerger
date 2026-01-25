@@ -7,7 +7,6 @@ __pycache__/
 !.gitignore
 !.gitattributes
 !README.md
-!config_help.md
 !requirements.txt
 !/SQLite_Merger/
 !*.toml
