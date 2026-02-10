@@ -169,7 +169,7 @@ class Table:
                 encoding = DEFAULT_CODEC
             elif self.type is TableType.OUTPUT:
                 encoding = OUTPUT_CODEC
-            elif not self.excel_name:
+            else:
                 encoding = INPUT_CODEC
 
             if codec_warn:
