@@ -225,7 +225,13 @@ class SQLiteMerger:
         from_files: list[tuple[Table, Path]] = []
         from_folders: list[tuple[Table, Path]] = []
         for src_tbl in tbl_with_source:
-            resolved_source = Path(expand_vars(str(src_tbl.csv_source), self.cfg, self.ctx))
+            expanded_csv_source = expand_vars(str(src_tbl.csv_source), self.cfg, self.ctx)
+
+            # ne pas traiter si source après expansion vide
+            if not expanded_csv_source:
+                continue
+
+            resolved_source = Path(expanded_csv_source)
             if not resolved_source.exists():
                 if not src_tbl.csv_missing_ok:
                     log(f"Source introuvable : {resolved_source}", logging.WARNING)
