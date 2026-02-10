@@ -330,7 +330,7 @@ class SQLiteProcessor:
     def _csv_read_file(self, csv_file: Path, encoding: str = "") -> Iterator[tuple[list[str], csv.DictReader]]:
         """Context manager pour lire un fichier CSV en testant plusieurs formats d'encodage"""
         # Encodages à tester, du plus strict au moins strict
-        encs_to_test: list[str] = ["utf-8-sig", "utf-8", "cp1252", "iso-8859-1"]
+        encs_to_test: list[str] = ["utf-8-sig", "cp1252", "iso-8859-1"]
 
         # Si encodage fourni alors on le place à utiliser en premier
         dflt_enc = encoding.lower() if encoding and get_valid_encoding(encoding) else DEFAULT_CODEC
